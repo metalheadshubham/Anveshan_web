@@ -1,0 +1,118 @@
+Here is the refined, "Mega Prompt" tailored for Base44. I have consolidated all your requests, resolved the conflicting design instructions (moving from "Cyberpunk" to "Anthropic/Google Minimal"), and structured it for maximum technical performance to prevent lag.
+
+---
+
+### **Copy and Paste the text below into Base44:**
+
+**Role:**
+You are a Lead Frontend Architect and Design Systems Expert at a top-tier Silicon Valley research lab. You are tasked with building a landing page for **Anveshan**, an AI project.
+
+**Design Philosophy (Crucial Overhaul):**
+
+* **Visual Reference:** Mimic the aesthetic of **Anthropic.com** or **Google DeepMind**.
+* **Vibe:** Classy, Academic, Minimal, High-Value.
+* **Tone:** Humble confidence. Do not "boast" or use loud colors. The design should feel like a whitepaper come to life—clean typography, plenty of whitespace, and subtle, sophisticated interactions.
+* **Color Palette:** Move away from neon cyberpunk. Use sophisticated "Off-Black" (`#111111`), "Warm Charcoal," and "Paper White." Accents should be subtle earth tones or soft serif-style blues.
+
+**Performance Requirement (Strict):**
+
+* **Zero Lag:** The previous iteration was laggy. You must optimize for performance.
+* **Virtualization:** Ensure animations only trigger when elements are in the viewport.
+* **Optimization:** Use lightweight SVG icons and optimized Framer Motion variants (`will-change: transform`).
+
+---
+
+### **Tech Stack & Implementation**
+
+* **Framework:** React + Vite + TypeScript.
+* **Styling:** Tailwind CSS (Focus on typography and spacing).
+* **Motion:** Framer Motion (Smooth, slow, heavily damped springs. No jerky movements).
+* **Fonts:** Use a high-end serif for Headings (like 'Merriweather' or 'Playfair Display') and a clean sans-serif for body (like 'Inter' or 'Geist Sans') to mimic the Anthropic research feel.
+
+---
+
+### **Page Structure & Detailed Content**
+
+#### **1. Navbar (Minimalist)**
+
+* **Logo:** No icon. Just the text.
+* **Text:** Write the project name in Sanskrit/Devanagari script: **"अन्वेषण"** followed by "Anveshan" in English in a smaller, lighter font weight.
+* **Right Side:** Minimal text links.
+
+#### **2. Hero Section (The "Research" Look)**
+
+* **Layout:** Clean, centered, or split with plenty of breathing room.
+* **Headline:** "The Future of Identity Verification."
+* **Sub-headline:** "An intelligent AI system for automated face verification and de-duplication. Built specifically for the IndiaAI Face Authentication Challenge 2025."
+* **Achievements (Subtle):** Display these facts elegantly (small text, perhaps separated by dots, not big loud badges):
+* *AIR 23 - IndiaAI Hackathon 2025*
+* *State Rank 2*
+* *79% CPU Accuracy*
+
+
+* **Action Buttons:**
+1. **Primary (Classy Solid):** "Download Alpha v2.0" -> Link: `https://github.com/metalheadshubham/Anveshan/archive/refs/heads/v2.0-release.zip`
+2. **Secondary (Subtle Text Link/Outline):** "View Source" -> Link: `https://github.com/metalheadshubham/Anveshan`
+
+
+
+#### **3. Architecture Map (Visual Diagram)**
+
+* Create a clean, schematic diagram using CSS/SVG shapes (lines connecting nodes) that explains the flow:
+* *Input Folder -> Tier 0 (MD5) -> Tier 3 (InsightFace) -> Verified Output.*
+
+
+* This should look like a technical diagram in a scientific paper.
+
+#### **4. The "How" (Interactive Timeline)**
+
+* A smooth scrolling timeline explaining the Multi-Tier Detection.
+* **Tiers:**
+* Tier 0: Instant Hash (MD5)
+* Tier 1: Perceptual Hash
+* Tier 2: Near-Duplicate
+* Tier 3: AI Face Recognition (InsightFace - CUDA/TTA)
+* Tier 4: Visual Features (ORB)
+
+
+* **Interaction:** As the user scrolls, the active tier highlights softly.
+
+#### **5. Technical Deep Dive (Wide & Mathematical)**
+
+* **Layout:** Full-width container, very clean.
+* **Content:** Display the Mathematical Foundation.
+* **Formatting:** Use beautiful, wide LaTeX rendering for formulas (Perceptual Hashing & ArcFace Embeddings). Ensure adequate padding so the math "breathes."
+
+#### **6. Bento Grid (Stats)**
+
+* A minimalist grid (thin borders, light background) showing:
+* 12,712 Lines of Code.
+* 90+ Hours of Development.
+* GPU Ready (CUDA optimized).
+* Processing Speed: 4,000 images in 16-20 mins.
+
+
+
+#### **7. Developer Section (Personal & Quirky)**
+
+* **Style:** Minimal text block, no profile picture placeholder.
+* **Name:** Shubham Kumar.
+* **Bio:** "16-Year-Old Solo Developer."
+* **Quote:** "I like to study physics and code, also I like bulbula."
+* **Links:** Github and Email (minimal icons).
+
+#### **8. Footer**
+
+* Copyright 2025 Anveshan Project.
+* "Made with ❤️ in Uttar Pradesh, India."
+
+---
+
+### **Specific Instructions for Base44:**
+
+1. **Smooth Scrolling:** Implement a global smooth scroll wrapper (like Lenis or similar) for a premium feel.
+2. **Lag Prevention:** Do not render heavy background particle effects. Use subtle CSS gradients or noise textures instead.
+3. **Consistency:** Ensure the padding and margins are consistent with a high-end design system (8pt grid).
+4. **Links:** Double-check that the Download button triggers the specific `.zip` link provided above.
+
+**Action:** Generate the complete, high-performance, Anthropic-style landing page code now.
