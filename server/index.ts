@@ -100,9 +100,9 @@ export const registerAndServe = async () => {
   }
 };
 
-// Only automatically run if this file is the entry point
-// This prevents it from running when imported by api/index.ts
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Only automatically run if not on Vercel
+// On Vercel, the export is used by api/index.ts
+if (process.env.VERCEL !== "1") {
   registerAndServe().catch((err) => {
     console.error("Failed to start server:", err);
     process.exit(1);
